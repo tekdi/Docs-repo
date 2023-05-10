@@ -117,4 +117,4 @@ Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
 
 `Step 13` :  Recreate a service once again with following command 
 
-           sudo docker-compose up -d --no-deps --force-recreate (servicename)
+           $ sudo docker-compose up -d --no-deps --force-recreate (servicename)
