@@ -1,12 +1,12 @@
 
 # Graylog documentation 
 
-`Step 1` : Install docker on your system 
+**`Step 1`** : Install docker on your system 
 
-`Step 2` : Perform a command 
+**`Step 2`** : Perform a command 
 		sudo docker swarm init
 
-`Step 3` : Create a file with name -  docker-compose.yml
+**`Step 3`** : Create a file with name -  docker-compose.yml
 And add following file in it 
 
 ```
@@ -68,21 +68,24 @@ volumes:
    driver: local
 ```
 
-`Step 4` : Create a GRAYLOG_ROOT_PASSWORD_SHA2 with following command 
+**`Step 4`** : Create a GRAYLOG_ROOT_PASSWORD_SHA2 with following command 
 echo -n "Enter Password: " && head -1 </dev/stdin | tr -d '\n' | sha256sum | cut -d" " -f1
 
-`Step 5` : 
+**`Step 5`** : 
 After that put a password you have added in the docker-compose file here 
 Ex. ZSp^5J8t7@hruBqQ (as this password is mention in above file)
 
-`Step 6` : Then you will get a GRAYLOG_ROOT_PASSWORD Replace this new password with the password present in the docker-compose.yml file
+**`Step 6`** : Then you will get a GRAYLOG_ROOT_PASSWORD Replace this new password with the password present in the docker-compose.yml file
 
-`Step 7` : 
-	Run a command : 	sudo docker-compose up -d mongodb
-				sudo docker-compose up -d elasticsearch
-				sudo docker-compose up -d graylog
+**`Step 7`** : 
+	Run a command : 	
+ ```      
+        sudo docker-compose up -d mongodb
+        sudo docker-compose up -d elasticsearch
+        sudo docker-compose up -d graylog
+```
 
-`Step 8` : 
+**`Step 8`** : 
 	Go to Browser and search for http://ip:9000 then you will be at Graylog front pages use 
 Username : admin
 Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
@@ -90,21 +93,21 @@ Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
 
 
 
-`Step 9` : 
+**`Step 9`** : 
 	Go to graylog —>system —> inputs
 
 
-`Step 10` : 
+**`Step 10`** : 
 	Select GELF TCP —> Launch new input
 
-`Step 11` : 
+**`Step 11`** : 
 	Put below details 
 	Tittle : server-logs (Editable)
 	Port : 12201
 	And SAVE
 
 
-`Step 12` : 
+**`Step 12`** : 
 	Add Logging driver into service docker-file which logs you want 
 
 ```
@@ -115,6 +118,6 @@ Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
 ```
 
 
-`Step 13` :  Recreate a service once again with following command 
+**`Step 13`** :  Recreate a service once again with following command 
 
-           $ sudo docker-compose up -d --no-deps --force-recreate (servicename)
+            sudo docker-compose up -d --no-deps --force-recreate (servicename)
