@@ -1,5 +1,5 @@
 
-# Graylog documentation 
+# Graylog Documentation 
 
 **`Step 1`** : Install docker on your system 
 
