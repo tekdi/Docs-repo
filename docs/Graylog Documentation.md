@@ -4,10 +4,10 @@
 **`Step 1`** : Install docker on your system 
 
 **`Step 2`** : Perform a command 
-		sudo docker swarm init
-
-**`Step 3`** : Create a file with name -  docker-compose.yml
-And add following file in it 
+```
+    sudo docker swarm init
+```
+**`Step 3`** : Create a file with name `docker-compose.yml`  and add below instructions in it 
 
 ```
 version: '3.3'
