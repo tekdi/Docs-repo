@@ -95,17 +95,19 @@ Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
 
 **`Step 9`** : 
 	Go to graylog —>system —> inputs
+  ![graylog_image](../static/graylog%20images/image1.png)
 
 
 **`Step 10`** : 
 	Select GELF TCP —> Launch new input
+![graylog_image2](../static/graylog%20images/image2.png)
 
 **`Step 11`** : 
 	Put below details 
 	Tittle : server-logs (Editable)
 	Port : 12201
 	And SAVE
-
+![graylog_image2](../static/graylog%20images/image3.png)
 
 **`Step 12`** : 
 	Add Logging driver into service docker-file which logs you want 
@@ -116,7 +118,7 @@ Password : ZSp^5J8t7@hruBqQ (as i have this password in my dockercompose file)
         options:
           gelf-address: "tcp://<IP>:12201"
 ```
-
+![graylog_image2](../static/graylog%20images/image4.png)
 
 **`Step 13`** :  Recreate a service once again with following command 
 
