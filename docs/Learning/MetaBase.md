@@ -22,8 +22,8 @@ docker pull metabase/metabase:latest
 Then start the Metabase container:
 ```
 docker run -d -p 3000:3000 --name metabase metabase/metabase
-
 ```
+
 This will launch an Metabase server on port 3000 by default.
 
 Once startup completes, you can access your Open Source Metabase at http://localhost:3000.
