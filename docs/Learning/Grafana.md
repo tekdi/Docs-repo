@@ -117,7 +117,7 @@ scrape_configs:
 `Step 3` : 
 	Go the specific directory where your `docker-compose.yml` is present and perform following command 
 ```			
-            docker-compose.yml up -d 
+docker-compose up -d 
 ```
 
 `Step 4` : 
