@@ -1,5 +1,5 @@
 
-# Graylog Documentation 
+# Graylog Installation with docker-compose file 
 
 **`Step 1`** : Install docker on your system 
 

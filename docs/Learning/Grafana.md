@@ -1,5 +1,5 @@
 
-# Grafana
+# Grafana Installation and Dashboard Setup 
 
 `Step 1` :
 	Refere following docker-compose.yml file for grafana that includes prometheus, cadvisor and node-exporter. But in following docker-compose file we have changed the default ports of the services you can choose it as default 
