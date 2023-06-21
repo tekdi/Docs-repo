@@ -1,5 +1,5 @@
 {
-  "name": "prasad-site",
+  "name": "my-site",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -40,5 +40,20 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "description": "This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekdi/Docs-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tekdi/Docs-repo/issues"
+  },
+  "homepage": "https://github.com/tekdi/Docs-repo#readme"
 }
