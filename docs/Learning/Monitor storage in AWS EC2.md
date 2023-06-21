@@ -1,5 +1,7 @@
-# MOnitore Storage in AWS EC2
-`**Step 1**`
+# Monitore Storage in AWS EC2
+**`Step 1`**
+
+
 ![AWS](../../static/AWS%20/img1.png)
 ![AWS](../../static/AWS%20/img2.png)
 ![AWS](../../static/AWS%20/img3.png)
@@ -8,7 +10,7 @@
 ![AWS](../../static/AWS%20/img6.png)
 
 
-`**Step 2**`
+**`Step 2`**
 
 **Install CloudWatch agent**
 
@@ -26,7 +28,7 @@ sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
 ```
 sudo vi /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
 ```
-enter the following snippet in the above file
+3. enter the following snippet in the above file
 ```
              {
  "agent": {
