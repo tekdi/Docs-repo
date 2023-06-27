@@ -152,6 +152,11 @@ The following commands interact with images stored on your Docker host:
 
 `docker tag <image> example-image:latest` – Add a new tag (`example-image:latest`) to an existing image (`<image>`).
 
+`docker images -f dangling=true` - list all dangling images.
+
+`docker images --no-trunc -aqf "dangling=true" | xargs docker rmi` - remove all dangling images.
+
+
 ## Pull and Push Images
 
 `docker push example.com/user/image:latest` – Push an image from your Docker host to a remote registry. The image is identified by its tag, which must reference the registry you’re pushing to.
