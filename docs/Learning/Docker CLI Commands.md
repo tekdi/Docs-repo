@@ -152,11 +152,6 @@ The following commands interact with images stored on your Docker host:
 
 `docker tag <image> example-image:latest` – Add a new tag (`example-image:latest`) to an existing image (`<image>`).
 
-`docker images -f dangling=true` - list all dangling images.
-
-`docker images --no-trunc -aqf "dangling=true" | xargs docker rmi` - remove all dangling images.
-
-
 ## Pull and Push Images
 
 `docker push example.com/user/image:latest` – Push an image from your Docker host to a remote registry. The image is identified by its tag, which must reference the registry you’re pushing to.
@@ -238,6 +233,10 @@ These commands interact with your Docker Hub account:
 ## Clean Up Unused Resources
 
 It’s normal for a regularly used Docker installation to accumulate a large number of resources, many of which become redundant as you create replacements. These commands will clean up your environment:
+
+`docker images -f dangling=true` - list all dangling images.
+
+`docker images --no-trunc -aqf "dangling=true" | xargs docker rmi` - remove all dangling images.
 
 `docker system prune` – Removes unused data, including dangling image layers (images with no tags).
 
