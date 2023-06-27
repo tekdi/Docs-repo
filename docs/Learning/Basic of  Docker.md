@@ -51,7 +51,7 @@ sudo apt-get install docker
 ```
 Verify the version with below command:
 ```
-docekr --version
+docker --version
 ```
 Once docker get install check the docker service status with below command:
 ```
