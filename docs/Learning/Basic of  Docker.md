@@ -6,8 +6,15 @@ The keywords of Docker are develop, ship and run anywhere.
 The whole idea of Docker is for developers to easily develop applications, ship them into containers which can then be
 deployed anywhere.
 
-Features of Docker
-=================
+**Table of contents:**
+
+- [Features of Docker](#features-of-docker)
+- [Why Virtualization ??](#why-virtualization-)
+- [Installation](#installation)
+- [Docker Architecture](#docker-architecture)
+
+
+## Features of Docker
 Docker has the ability to reduce the size of development by providing a smaller footprint of the operating
 system via containers.
 
@@ -19,19 +26,14 @@ You can deploy Docker containers anywhere, on any physical and virtual machines 
 Since Docker containers are pretty lightweight, they are easily scalable.
 
 
-Why Virtualization ??
-==================
+## Why Virtualization ??
 
-Hardware Utilization
+- Hardware Utilization
+- To reduce number of physical servers
+- Reduce Cost
+- More different OS. Your whole design of virtualization is to target the Applications.
 
-To reduce no of physical servers
-
-Reduce Cost
-
-More different OS. Your whole design of virtualization is to target the Applications.
-
-Installation
-============
+## Installation
 
 Before installing Docker, Linux kernal version should be `3.10` Check with below command:
 ```
@@ -68,8 +70,8 @@ With the docker installation `dockerroot` group get created where we have to add
 sudo usermod -aG dockerroot <user-name>
 ```
 
-**Docker Architecture**
-============
+## Docker Architecture
+
 To learn about docker architecture refer below link:
 
 https://docs.docker.com/get-started/overview/#docker-architecture
@@ -77,7 +79,7 @@ https://docs.docker.com/get-started/overview/#docker-architecture
 ![docker_image](../../architecture.svg)
 
 
-# Let’s see do we have any images
+Let’s see do we have any images
 ```
 sudo docker images
 ```
