@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Tekdi-docs',
-  tagline: 'take the lead',
+  title: 'tekdi-docs',
+  tagline: 'take the lead', 
     favicon: 'img/tekdi.png',
 
   // Set the production url of your site here

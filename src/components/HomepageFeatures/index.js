@@ -4,32 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Find docs',
+    Svg: require('@site/static/img/loupe-magnifying-glass.svg').default,
     description: (
       <>
-        All the documents are written in very simple language. 
+        Here you will find comprehensive documentation on installations, upgradations, setpus and various topics related to Devops.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Knowledge is the key to success',
+    Svg: require('@site/static/img/document-svgrepo-com.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Whether you're a fresher or an experienced, this site is designed to provide you with all the information you need.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'take the lead',
+    Svg: require('@site/static/img/tekdi.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+        CATALYSE. DIGITAL. TRANSFORMATION.
+         </>
     ),
   },
 ];
