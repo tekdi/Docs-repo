@@ -22,11 +22,11 @@
   --ifm-color-primary: #4cf718;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-darkest: #24c416;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(32, 43, 187, 0.89);
+  --docusaurus-highlighted-code-line-bg: rgb(229, 230, 240);
 }
 html[data-theme='dark'] body {
   background-color: rgb(2, 14, 6);

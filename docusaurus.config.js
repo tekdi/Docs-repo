@@ -89,12 +89,12 @@ const config = {
         links: [
           {
             title: 'Docs',
-            //items: [
-              //{
-               // label: 'Documents',
-             // to: '/docs/intro',
-              //},
-            //],
+            items: [
+              {
+                label: 'Documents',
+              to: '/docs/Best_Practices/aws-ses',
+              },
+            ],
           },
           
           
