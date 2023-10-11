@@ -1,4 +1,4 @@
-# Check Battery Health
+Check Battery Health
 
 The simplest way to get battery-related statistics is using the upower command. You can use this utility to list down all the power sources available and manage the overall power management on your system.
 
