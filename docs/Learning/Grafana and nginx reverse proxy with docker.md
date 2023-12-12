@@ -4,7 +4,7 @@ We have to upstream the Grafana in Nginx.conf file as below:
 
 ```
 upstream grafana {
-  server 10.10.10.5:3000;
+  server 10.20.0.90:3000;
 }
 
 server {
