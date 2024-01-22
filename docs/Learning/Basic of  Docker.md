@@ -55,19 +55,19 @@ docker --version
 ```
 Once docker get install check the docker service status with below command:
 ```
-service docker status
+sudo systemctl status docker
 ```
 To start the docker service
 ```
-service docker start
+sudo systemctl start docker
 ```
 To enable the docker service
 ```
-chkconfig docker on
+sudo systemctl enable docker
 ```
 With the docker installation `dockerroot` group get created where we have to add the userId to dockerroot group.
 ```
-sudo usermod -aG dockerroot <user-name>
+sudo usermod -aG dockerroot $USER
 ```
 
 ## Docker Architecture
