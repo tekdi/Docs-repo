@@ -33,7 +33,21 @@ The most important configuration step in an Nginx reverse proxy configuration is
 
 In this Nginx reverse proxy example, we assume a Middleware service is running on Docker Container at port **`8000`**, and we need Nginx to proxy an application with the context root of /middleware.
 
-![nginx](../../static/Nginx/img2.png)
+```
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/your_domain/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name your_domain www.your_domain;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+```
 
 
 Test Nginx Configuration file.
