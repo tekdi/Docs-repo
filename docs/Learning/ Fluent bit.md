@@ -52,11 +52,15 @@ PutRetentionPolicy (if log_retention_days is set > 0)
 For that follow the steps : 
 
 `Step 1`
+
 In IAM console go to Policies and click on create Policy : 
+
 ![fluent_bit](../../static/Fluent%20bit/step1.png)
 
 `Step 2`
+
 After Selecting create policy select JSON as shown in below image : 
+
 ![fluent_bit](../../static/Fluent%20bit/step2.png)
 
 In the Policy editor field add below policy : 
@@ -81,23 +85,32 @@ In the Policy editor field add below policy :
 ```
 
 `Step 3` 
+
 In this Step need to add the Role name, description and the Tag (Optional) as per your use and click on create policy 
+
 ![fluent_bit](../../static/Fluent%20bit/step3.png)
 
 `Step 4`
+
 Once your policy created select Users in the IAM service and create a new user 
+
 ![fluent_bit](../../static/Fluent%20bit/step4.png)
 
 `Step 5`
+
 Give name to the user and then click on next then will come to a set permission page select attach policy directly and search for the policy you have created above as shown in below image : 
+
 ![fluent_bit](../../static/Fluent%20bit/step5.png)
 
 
 `Step 6`  
+
 Review once and create. Go to the user created and go under Security Credentials and create a Access Key 
+
 ![fluent_bit](../../static/Fluent%20bit/step6.png)
 
 `Step 7` 
+
 Create security credentials and download the security Credentials csv. 
 
 Once you are done with the Creating user and Access key and Secrete Access key 
@@ -113,6 +126,7 @@ curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
 ```
 
 *Configure Yum*
+
 We provide fluent-bit through a Yum repository. In order to add the repository reference to your system, please add a new file called `fluent-bit.repo in /etc/yum.repos.d/` with the following content:
 
 ```
@@ -138,6 +152,7 @@ aws configure
 Once you run the above command it will ask you for the AWS Access Key, AWS Secret Access Key, Default region name, Default output format put the details form the CSV you have downloaded after creating a security credentials for user.
 
 **`Step 4`** 
+
 Then go to the location `/etc/fluent-bit/` and you will find the file name as `fluent-bit.conf`
 Take a copy of the file on other locations and edit that file for that follow below commands 
 
@@ -172,7 +187,7 @@ Remove all the details from the file and add below configurations in that same f
     auto_create_group true
 ```
 
-In above configurations i have taken the file from the location  `/home/ec2-user/log-1/sample.logs`.php  and in the OUTPUT it will create a log-group having name Prod-1 and log-streme Logs-1
+In above configurations i have taken the file from the location `/home/ec2-user/log-1/sample.logs`.php  and in the OUTPUT it will create a log-group having name Prod-1 and log-streme Logs-1
 
 If you want to push more files then you can take the below file in considerations : 
 
@@ -214,6 +229,7 @@ If you want to push more files then you can take the below file in consideration
 From above configurations it will take 2 different files from different locations and then add to the log group having name Prod-1 with different logstreme means the first file will go to the Logs-1 logstreme and second file will log in the Logs-2 logstreme under the same logGroup Prod-1
 
 **`Step 6`** 
+
 Once added the configurations to the file save the file and then start the fluent-bit with the below command 
 ```
 sudo systemctl start fluent-bit 
@@ -223,6 +239,7 @@ sudo systemctl status fluent-bit
 ```
 
 It will show you the output like : 
+
 ![fluent_bit](../../static/Fluent%20bit/last.png)
 
 Check the Cloudwatch Log-groups and Logstreme after 5 min logs will come to the locations you have configured in the fluent-bit configurations.
