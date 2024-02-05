@@ -91,24 +91,21 @@ Could not request local forwarding.
 Now login to the server again using .pem file and ec2 user with IP or DNS you can refer to the command as mentioned in step no. 12 and then install below packages : 
 
 
-
+# For Linux server
 ```
 sudo yum install telnet
-```     # For Linux server
+```     
 
+# For Ubuntu Server
 ```
 sudo apt install telnet
-```       # For Ubuntu Server
-
+```       
 
 After installing packages run the below command to check the connections : 
-
-
 
 ```
 telnet testing.hxrdzy.ng.0001.aps1.cache.amazonaws.com 6379
 ```
-
 
 
 And you will get below output as connection is established : 
