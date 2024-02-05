@@ -91,12 +91,12 @@ Could not request local forwarding.
 Now login to the server again using .pem file and ec2 user with IP or DNS you can refer to the command as mentioned in step no. 12 and then install below packages : 
 
 
-# For Linux server
+*For Linux server*
 ```
 sudo yum install telnet
 ```     
 
-# For Ubuntu Server
+*For Ubuntu Server*
 ```
 sudo apt install telnet
 ```       
