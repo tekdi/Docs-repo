@@ -64,14 +64,18 @@ Once your cluster is ready go to the Security groups in EC2 and go to the Securi
 
 After that Login to a EC2 server with SSH with below command : 
 
-```ssh -i <.pem> <username>@<DNS/IP of the server>```
+```
+ssh -i <.pem> <username>@<DNS/IP of the server>
+```
 
 
 
 
 Once connection is established then exit the server login and then run the following command : 
 
-```ssh -i <.pem> -f -N -L 6379:testing.hxrdzy.ng.0001.aps1.cache.amazonaws.com:6379 <Ec-2-user>:<DNS/IP of the server>```
+```
+ssh -i <.pem> -f -N -L 6379:testing.hxrdzy.ng.0001.aps1.cache.amazonaws.com:6379 <Ec-2-user>:<DNS/IP of the server>
+```
 
 
 After running this command you will get below output as : 
@@ -88,16 +92,22 @@ Now login to the server again using .pem file and ec2 user with IP or DNS you ca
 
 
 
-```sudo yum install telnet```     # For Linux server
+```
+sudo yum install telnet
+```     # For Linux server
 
-```sudo apt install telnet```       # For Ubuntu Server
+```
+sudo apt install telnet
+```       # For Ubuntu Server
 
 
 After installing packages run the below command to check the connections : 
 
 
 
-```telnet testing.hxrdzy.ng.0001.aps1.cache.amazonaws.com 6379```
+```
+telnet testing.hxrdzy.ng.0001.aps1.cache.amazonaws.com 6379
+```
 
 
 
