@@ -3,7 +3,10 @@
 
 **`Step 1`** : 
 
-	To set up the Amazon cloudwatch agent for the Memory utilization on the server first check the cloudwatch agent package is installed on the server or not with the following command : 
+
+To set up the Amazon cloudwatch agent for the Memory utilization on the server first check the cloudwatch agent package is installed on the server or not with the following command : 
+
+
 
 ```
 	sudo systemctl status amazon-cloudwatch-agent.service 
@@ -52,7 +55,8 @@ sudo systemctl status amazon-cloudwatch-agent.service
 
 **`Step 2`** :
 
-	Once your Cloudwatch agent is installed and running fine then for the memory utilization follow the steps below : 
+
+Once your Cloudwatch agent is installed and running fine then for the memory utilization follow the steps below : 
 
 ```
 	wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
