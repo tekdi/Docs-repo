@@ -52,5 +52,5 @@ Key Features:
 
 ### 1. Download the Script
 ```bash
-wget https://drive.google.com/file/d/1ldEW0j8Z8of4LuT5LFDbd9NPw4HeCYNP/view?usp=drive_link -O setup_backup_monitoring.sh
+wget https://drive.google.com/file/d/19EfWRFF5bJFtAkJoNBo5INapjxicB828/view?usp=drive_link -O setup_backup_monitoring.sh
 chmod +x setup_backup_monitoring.sh
