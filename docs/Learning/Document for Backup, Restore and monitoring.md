@@ -12,7 +12,7 @@
 6. [Troubleshooting](#troubleshooting)
 7. [Maintenance](#maintenance)
 8. [Security](#security)
-9. [Script Reference](#script-reference)
+
 
 ---
 
