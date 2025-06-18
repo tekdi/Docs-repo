@@ -1,7 +1,5 @@
 # Backup and Monitoring System Setup Guide
 
-**Version:** 1.0  
-**Last Updated:** $(date +'%Y-%m-%d')
 
 ---
 
