@@ -366,7 +366,7 @@ The Prometheus target-health screenshot subsequently showed cAdvisor, `docker_me
 
 ---
 
-## 13. References
+## 13. References.
 
 - [Docker Docs — Collect Docker metrics with Prometheus](https://docs.docker.com/engine/daemon/prometheus/)
 - [Docker Docs — dockerd CLI / daemon metrics](https://docs.docker.com/reference/cli/dockerd/)
